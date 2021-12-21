@@ -1,4 +1,5 @@
 import { Button, Grid, TextField } from '@material-ui/core';
+import { useEffect } from 'react';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -37,6 +38,10 @@ export default function Blog() {
         }
       });
   };
+
+  useEffect(() => {
+    
+  }, [form])
 
   return (
     <div>

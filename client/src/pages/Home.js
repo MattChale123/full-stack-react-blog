@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Paper } from '@material-ui/core';
 import Comments from '../components/Comments';
+import Blog from './Blog';
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -30,6 +31,7 @@ export default function Home() {
           </Paper>
         );
       })}
+      <Blog />
     </div>
   );
 }
